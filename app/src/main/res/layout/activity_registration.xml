@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="50sp"
+        android:text="Hey there!"
+        android:textColor="#022B3A"
+        android:id="@+id/Hi"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hi"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tabs"
+        app:tabTextColor="#808080"
+        app:tabSelectedTextColor="#022B3A"
+        app:tabIndicatorHeight="2sp"
+        app:tabIndicatorColor="#022B3A"
+        app:tabIndicatorFullWidth="false"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"
+        android:layout_above="@+id/quote"
+        android:id="@+id/frame"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="cheerup🎉"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

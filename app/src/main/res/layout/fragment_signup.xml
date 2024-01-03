@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:background="@drawable/input_button"
+        android:layout_marginStart="20dp"
+        android:hint="Enter FullName"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passcode"
+        android:background="@drawable/input_button"
+        android:layout_marginStart="20dp"
+        android:hint="Enter Passcode"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/name"
+        android:paddingStart="15dp"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:background="@drawable/input_button"
+        android:layout_marginStart="20dp"
+        android:hint="Email"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/passcode"
+        android:paddingStart="15dp"
+        android:inputType="text"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonenumber"
+        android:background="@drawable/input_button"
+        android:layout_marginStart="20dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/email"
+        android:paddingStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Sign up"
+        android:backgroundTint="@color/blue"
+        android:id="@+id/signup"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>
